@@ -1,24 +1,28 @@
 import React from 'react';
-
-
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { GrDocumentText } from "react-icons/gr";
 
 function Nav() {
 
       
     return (
-      <header className="flex-row px-1 space-between">
-        <h1>
-          Kristy Zurmuhlen
-        </h1>
+      
+      
         <nav>
-          <ul className="flex-row">
-            <li> Projects </li>
-            <li> About </li>
-            <li> Contact </li>
-            <li> Resume </li> 
+           <div className="icon-box">
+            <h3 style={{fontSize: "30px", opacity: "70%"}}><AiFillGithub/></h3>
+            <h3 style={{fontSize: "30px", opacity: "70%"}}><GrDocumentText/></h3>
+            <h3 style={{fontSize: "30px", opacity: "70%"}}><AiFillLinkedin/></h3>
+            
+          </div>
+          <ul>
+            <li> PROJECTS </li>
+            <li> ABOUT </li>
+            <li> CONTACT </li>
           </ul>
+         
         </nav>
-      </header>
+      
     );
   }
 

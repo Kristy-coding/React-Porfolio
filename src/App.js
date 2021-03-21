@@ -1,10 +1,13 @@
 
 import React from 'react';
- import Nav from './components/Nav';
+
 
 import About from './components/About';
-import Projects from './components/Projects';
+import Portfolio from './components/Portfolio';
 import Modal from './components/Modal';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import ContactForm from './components/Contact'
 
 function App() {
 
@@ -12,12 +15,13 @@ function App() {
 
   return (
     <div>
-      
-      <Nav />
+      <Nav/>
+      <Header />
       <main>
         <div>
-          <Projects />
+          <Portfolio />
           <About />
+          <ContactForm/>
           <Modal/>
         </div>
       </main> 
