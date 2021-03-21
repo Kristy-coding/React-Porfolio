@@ -4,7 +4,7 @@ import profilepic from '../../assets/images/portfolio-pic.jpg'
 
 function About () {
     return (
-        <div className="about-me-container">
+        <div id= "about" className="about-me-container">
             <h3>ABOUT ME...</h3>
             <img className="profile-pic" src={profilepic} alt="profile pic"/>
             <p>     I am a full stack developer leveraging a dynamic professional, and academic background. Educational experiences include four years as a student-athlete at Stanford University and recent completion of UPenn LSP School’s Full Stack Development Bootcamp. In this intense 24 week program I was able to develop strong skills in HTML, CSS, JavaScript and Node.

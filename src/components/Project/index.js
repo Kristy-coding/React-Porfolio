@@ -1,75 +1,60 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import snapphoto from '../../assets/images/Screen Shot 2021-03-20 at 3.55.18 PM.png'
-import madlibsphoto from '../../assets/images/Screen Shot 2021-03-21 at 9.49.08 AM.png'
-import runbuddyphoto from '../../assets/images/run-buddy-snap.jpeg'
-import holidaycheerphoto from '../../assets/images/screen shot 3.png'
-import techblogphoto from '../../assets/images/Screen Shot 2021-03-20 at 9.19.05 AM.png'
-import flowerphoto from '../../assets/images/Screen Shot 2021-03-20 at 4.30.13 PM.png'
-
-const Project = () => {
-
-  //const [currentPhoto, setCurrentPhoto] = useState();
-
-  
-
-  const [projects] = useState([
-    {
-      name: 'Holiday Cheer',
-      src: {holidaycheerphoto},
-      
-    },
-    {
-        name: 'Mad Libs',
-        src: {madlibsphoto},
-        
-      },
-      {
-        name:'Oh Snap',
-        src:  {snapphoto},
-        
-      },
-      {
-        name: 'Run Buddy',
-        src: {runbuddyphoto},
-        
-      },
-      {
-        name: 'Flower',
-        src: {flowerphoto},
-        
-      },
-      {
-        name: 'Tech Blog',
-        src: {techblogphoto},
-        
-      },
-  ]);
-
-  
-
-  
+import { AiFillGithub } from "react-icons/ai";
+import { makeStyles } from '@material-ui/core/styles';
 
 
 
+
+const useStyles = makeStyles((theme) => ({
+
+  gridItem: {
+      position: "relative",
+      "&:hover $centered": {display: "flex"},
+      "&:hover img": {opacity:.2}
+  },
+  centered: {
+    top: 0,
+    left: 0,
+    margin: "auto",
+    display: "block",
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    display: "none",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+
+  padding: {
+      padding: "60px"    
+  }
+}));
+
+const Project = (props) => {
+
+  const classes = useStyles();
 
   return (
     
     <>
-            {projects.map(() => (
-                <Grid item xs={12} sm={6}>
-                <img
-                    src={projects.src}
-                    alt={projects.name}
-                    // onmouse over or hover should turn image opace  and display github icon and title of project with link
-                    //onClick={() => ()}
-                    // on Click on github link should take you to github
-                    // onClick on title should take you  to link of deployed app 
-                    key={projects.name}
-                />
+            
+                <Grid className ={classes.gridItem} item xs={12} sm={6}>
+                  <img
+                      src={props.src}
+                      alt={props.name}
+                      // onmouse over or hover should turn image opace  and display github icon and title of project with link
+                      //onClick={() => ()}
+                      // on Click on github link should take you to github
+                      // onClick on title should take you  to link of deployed app    
+                  />
+                  <div className = {classes.centered}>
+                      <a href={props.github} target= "_blank" rel="noreferrer noopener" className= {classes.padding} style={{fontSize: "30px"}}><AiFillGithub/></a>
+                      <a href={props.deploy} target= "_blank" rel="noreferrer noopener">{props.name}</a>
+                  </div>
                 </Grid>
-            ))}
+                
+            
     </>
     
     

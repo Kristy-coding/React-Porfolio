@@ -1,4 +1,12 @@
+nav a {
+    text-decoration: none;
+    color: black;
+}
 
+nav a:hover {
+    background-color: rgba(128, 128, 128, 0.199);
+    cursor:pointer;
+}
 
 nav {
 display: flex;
@@ -106,4 +114,20 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 12px;
+}
+
+
+.modalContainer {
+	background: var(--darker);
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modalTitle {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 25px;
 }
