@@ -66,7 +66,7 @@ function ContactForm(){
         <section className= "contact-container">
         
         <form id="contact-form" onSubmit={handleSubmit}>
-        <h3 >Contact me:</h3>
+        <h3 style= {{fontSize: "40px", fontStyle: "italic"}} >LET'S CONNECT!</h3>
             <div>
                 <label htmlFor= "name">Name:</label><br />
                 <input type="text" name="name" defaultValue= {name} onBlur={handleChange}/>
