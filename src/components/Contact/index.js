@@ -2,6 +2,11 @@
 //import {validateEmail} from '../../utils/helpers';
 
 
+
+
+
+
+
 function ContactForm(){
 
     // // need to use state for error handling to change the state of the error 
@@ -111,23 +116,29 @@ function ContactForm(){
         //     </form>
         // </section>
 
-        <section>
-        <h1 >Contact me</h1>
-        <form>
+        <section className= "contact-container">
+        
+        <form id="contact-form">
+        <h3 >Contact me:</h3>
             <div>
-                <label htmlFor= "name">Name:</label>
+                <label htmlFor= "name">Name:</label><br />
                 {/*create a function that will sync the state of the component formState with the user inputs. First, add the attribute onChange (which is an event listener) to the <input> element for name, and assign a function to this attribute, aptly called handleChange
                 
                 we can also use the onBlur attribute instead of onChange. The onBlur attribute will fire the event once the user has changed focus from the input field, thus allowing the user to finish their entry before validating their input.
                 */}
+              
                 <input type="text" name="name" />
+                
             </div>
             <div>
-                <label htmlFor="email"> Email address:</label>
+                <label htmlFor="email">Email:</label><br />
+                
                 <input type ="email" name="email"  />
+                
             </div>
             <div>
-                <label htmlFor ="message">Message:</label>
+                <label htmlFor ="message">Message:</label><br />
+             
                 <textarea name = "message" />
             </div>
         
