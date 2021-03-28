@@ -5,7 +5,7 @@
 
   ### Description
 
-  see some on my recent projects!
+  see some of my recent projects!
 
   https://kristy-coding.github.io/React-Portfolio/
   
