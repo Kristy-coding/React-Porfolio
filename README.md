@@ -5,7 +5,7 @@
 
   ### Description
 
-  see some on my recent projects!
+  see some of my recent projects!
 
   https://kristy-coding.github.io/React-Portfolio/
   
@@ -19,14 +19,10 @@
   * [Tests](https://github.com/Kristy-coding/README-Generator/blob/main/README.md#tests)
   * [Questions](https://github.com/Kristy-coding/README-Generator/blob/main/README.md#questions)
   
-  ### Installation
+  ### Screen Shot
   
+  <img width="1467" alt="Screen Shot 2021-03-28 at 2 08 40 PM" src="https://user-images.githubusercontent.com/68924529/112762719-367b8900-8fcf-11eb-8a0f-2b7797cf4af8.png">
   
-
-  ### Usage
-  
-
-   
   ### License 
   This application is covered under the [MIT license](https://choosealicense.com/licenses/mit/)
   
