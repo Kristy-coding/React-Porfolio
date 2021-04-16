@@ -11,6 +11,7 @@ import runbuddyphoto from '../../assets/images/run-buddy-snap.jpeg'
 import holidaycheerphoto from '../../assets/images/screen shot 3.png'
 import techblogphoto from '../../assets/images/Screen Shot 2021-03-20 at 9.19.05 AM.png'
 import flowerphoto from '../../assets/images/Screen Shot 2021-03-20 at 4.30.13 PM.png'
+import memephoto from '../../assets/images/Screen Shot 2021-04-15 at 5.45.51 PM.png'
 
 
 const projects = [
@@ -43,8 +44,10 @@ const projects = [
       
     },
     {
-      name: 'Project in the Works!',
-      src: flowerphoto,
+      name: 'Meme-ories App',
+      src: memephoto,
+      deploy: 'https://m3m3-ories.herokuapp.com/',
+      github: 'https://github.com/jbeedle19/game-project'
       
     },
     {
